@@ -198,7 +198,9 @@
           </div>
         </div>
       </section>
+    </div>
 
+    <div class="bottom-wrapper">
       <section class="contact">
         <div class="contact--column">
           <h2 class="contact--title">Contact</h2>
@@ -207,29 +209,26 @@
             fill in the form, and I'll get back to you as soon as possible.
           </p>
         </div>
-
         <div class="contact-column">
-          <form action="#" class="contact-form">
-            <label for=""
-              >Name
-              <input type="text" name="name" />
-            </label>
-
-            <label for=""
-              >Email
-              <input type="email" name="email" />
-            </label>
-
-            <label for=""
-              >Message
-              <textarea name="message" id="" cols="30" rows="10"></textarea>
-            </label>
-
-            <button type="submit" class="cta">Send Message</button>
+          <form action="#" class="contact--form">
+            <label for="name">Name </label>
+            <input type="text" name="name" id="name" placeholder="NAME" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="EMAIL" />
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="MESSAGE"
+              cols="30"
+              rows="5"
+            ></textarea>
+            <button type="submit" class="cta btn form--btn">
+              Send Message
+            </button>
           </form>
         </div>
       </section>
-
       <footer>
         <a href="index.html" class="header--logo">adamkeyes</a>
         <nav class="footer--nav">
