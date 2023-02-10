@@ -52,6 +52,21 @@ h1 span::after {
   z-index: -1;
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: -1.2;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin: 0.85em 0 0.35em;
+  text-transform: uppercase;
+}
+
 p {
   font-weight: 500;
   line-height: 1.62;
@@ -64,9 +79,7 @@ p {
   line-height: 1.62;
   letter-spacing: 2.3px;
   text-transform: uppercase;
-  margin: 1.5em auto 0;
   border-bottom: 2px solid #4ee1a0;
-  width: 7.5em;
   padding-bottom: 0.5em;
 }
 
@@ -111,6 +124,11 @@ header {
   margin: 0 auto;
 }
 
+.hero .cta {
+  margin: 1.5em auto 0;
+  width: 7.5em;
+}
+
 /* Skills Section */
 
 .skills {
@@ -130,4 +148,35 @@ header {
   line-height: 1.25;
   letter-spacing: -1px;
   color: #ffffff;
+}
+
+/* Projects Section */
+
+.projects {
+  margin-top: 5em;
+}
+
+.projects--head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects--grid {
+  margin-top: 2.5em;
+}
+
+.project {
+  margin-top: 2.5em;
+}
+
+.project--tools {
+  display: flex;
+  gap: 0.5em;
+}
+
+.project--actions {
+  display: flex;
+  gap: 1em;
+  margin-top: 1.25em;
 }
