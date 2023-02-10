@@ -77,7 +77,7 @@ p {
   margin: 0 auto;
   padding: 1.125em 1em;
   position: relative;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 /* Header Section */
@@ -109,4 +109,25 @@ header {
   order: -1;
   width: 55%;
   margin: 0 auto;
+}
+
+/* Skills Section */
+
+.skills {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  margin-top: 5em;
+  padding: 2.5em 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.skill--head {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.25;
+  letter-spacing: -1px;
+  color: #ffffff;
 }
