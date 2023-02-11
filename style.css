@@ -100,6 +100,7 @@ p {
   margin: 0 auto;
   padding: 1.125em 1em;
   position: relative;
+  overflow-x: hidden;
 }
 
 .bottom-wrapper {
@@ -142,6 +143,26 @@ header {
   width: 7.5em;
 }
 
+.hero--ring {
+  position: absolute;
+  width: 530px;
+  height: 129px;
+  left: -340px;
+  top: 175px;
+  opacity: 0.75;
+  z-index: -1;
+}
+
+.hero--circle {
+  position: absolute;
+  width: 129px;
+  height: 129px;
+  left: 311px;
+  top: 300px;
+  opacity: 0.75;
+  z-index: -1;
+}
+
 /* Skills Section */
 
 .skills {
@@ -161,6 +182,16 @@ header {
   line-height: 1.25;
   letter-spacing: -1px;
   color: #ffffff;
+}
+
+.skills--ring {
+  position: absolute;
+  width: 530px;
+  height: 129px;
+  left: 225px;
+  top: 1310px;
+  opacity: 0.65;
+  z-index: -1;
 }
 
 /* Projects Section */
@@ -238,6 +269,15 @@ header {
 
 .form--btn {
   margin: 2em 1em 0 auto;
+}
+
+.contact--ring {
+  position: absolute;
+  width: 530px;
+  height: 129px;
+  left: -348px;
+  top: 575px;
+  opacity: 0.65;
 }
 
 /* Footer Section */
