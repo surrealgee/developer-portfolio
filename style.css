@@ -148,9 +148,15 @@ header {
   gap: 1.8em;
 }
 
+.hero--title,
+.hero--text {
+  max-width: 375px;
+}
+
 .hero--photo {
   order: -1;
   width: 55%;
+  max-width: 215px;
 }
 
 /* Skills Section */
@@ -313,9 +319,13 @@ footer {
   opacity: 0.65;
 }
 
-@media (min-width: 426px) {
+@media (min-width: 755px) {
   body {
     font: var(--body-l);
+  }
+
+  br {
+    display: initial;
   }
 
   section {
@@ -351,12 +361,22 @@ footer {
 
   .hero {
     margin-top: 5em;
-    /* border: 1px solid red; */
     display: flex;
     justify-content: flex-start;
     text-align: left;
     width: 500px;
     gap: 3em;
+  }
+
+  .hero--title,
+  .hero--text {
+    max-width: unset;
+  }
+
+  .hero--photo {
+    order: -1;
+    width: 55%;
+    max-width: unset;
   }
 
   .hero--photo {
@@ -421,22 +441,18 @@ footer {
   /* Decoration */
 
   .hero--ring {
-    top: 1.3%;
-    left: -38%;
+    top: 11vh;
+    left: -35vw;
+    width: 69vw;
   }
 
   .hero--circle {
-    left: 93%;
-    top: 6.9%;
+    left: 93vw;
+    top: 50vh;
   }
 
   .skills--ring {
-    position: absolute;
-    width: 530px;
-    height: 129px;
     left: 75%;
-    top: 16.3%;
-    opacity: 0.65;
-    z-index: -1;
+    top: 115vh;
   }
 }
