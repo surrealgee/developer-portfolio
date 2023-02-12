@@ -398,7 +398,9 @@ footer {
   .hero .cta {
     margin-right: auto;
   }
+}
 
+@media (min-width: 672px) {
   /* Skills Section */
 
   .skills {
@@ -424,7 +426,9 @@ footer {
   .project {
     flex-basis: 48%;
   }
+}
 
+@media (min-width: 500px) {
   /* Contact Section */
 
   .contact {
