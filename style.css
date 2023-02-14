@@ -99,6 +99,11 @@ a {
   padding-bottom: 0.5em;
 }
 
+.cta:hover,
+.cta:active {
+  color: var(--primary-light);
+}
+
 /******* 
 Layout 
 *******/
@@ -136,6 +141,14 @@ header {
   max-width: 175px;
   display: flex;
   justify-content: space-between;
+}
+
+.header--nav img:hover,
+.header--nav img:active,
+.footer--nav img:hover,
+.footer--nav img:active {
+  filter: invert(30%) sepia(67%) saturate(370%) hue-rotate(99deg)
+    brightness(90%) contrast(90%);
 }
 
 /* Hero Section */
@@ -241,6 +254,16 @@ section {
   font-weight: 500;
 }
 
+input:valid,
+textarea:valid {
+  border-bottom: 1px solid var(--primary-light);
+}
+
+/* input:invalid,
+textarea:invalid {
+  border-bottom: 1px solid red;
+} */
+
 .form--btn {
   margin: 2em 1em 0 auto;
 }
@@ -305,7 +328,7 @@ footer {
   width: 530px;
   height: 129px;
   left: 65%;
-  top: 31.5%;
+  top: 30.5%;
   opacity: 0.65;
   z-index: -1;
 }
@@ -315,7 +338,7 @@ footer {
   width: 530px;
   height: 129px;
   left: -348px;
-  top: 470px;
+  top: 430px;
   opacity: 0.65;
 }
 
@@ -332,9 +355,6 @@ Tablet Design
     display: initial;
   }
 
-  section {
-    padding: 0;
-  }
   /* Typography */
   h1 {
     font: var(--heading-xl);
@@ -402,6 +422,10 @@ Tablet Design
   .hero .cta {
     margin-right: auto;
   }
+
+  .projects {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 672px) {
@@ -412,6 +436,7 @@ Tablet Design
     flex-wrap: wrap;
     justify-content: start;
     padding: 4em 0;
+    border-bottom: none;
   }
 
   .skill {
@@ -449,19 +474,24 @@ Tablet Design
   /* Decoration */
 
   .hero--ring {
-    top: 11vh;
-    left: -35vw;
-    width: 69vw;
+    top: 3%;
+    left: -35%;
+    width: 69%;
   }
 
   .hero--circle {
-    left: 93vw;
-    top: 50vh;
+    left: 93%;
+    top: 15.25%;
   }
 
   .skills--ring {
     left: 75%;
-    top: 115vh;
+    top: 37%;
+  }
+
+  .contact--ring {
+    left: -45%;
+    top: 65%;
   }
 }
 
@@ -473,6 +503,7 @@ Desktop Design
   .wrapper {
     max-width: 1100px;
     padding: 0;
+    /* overflow-x: initial; */
   }
 
   br {
@@ -574,5 +605,28 @@ Desktop Design
   footer {
     max-width: 1100px;
     margin: 0 auto;
+  }
+
+  /* Decoration */
+
+  .hero--ring {
+    top: 4.5%;
+    left: -45%;
+    width: 69%;
+  }
+
+  .hero--circle {
+    left: 54%;
+    top: 17.5%;
+  }
+
+  .skills--ring {
+    left: 85%;
+    top: 32%;
+  }
+
+  .contact--ring {
+    left: -15%;
+    top: 40%;
   }
 }
